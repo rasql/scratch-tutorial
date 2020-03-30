@@ -11,6 +11,7 @@ Welcome to Scratch tutorial's documentation!
    :caption: Contents:
 
    1_intro/intro
+   2_looks/looks
 
 
 

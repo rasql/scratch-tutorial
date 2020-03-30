@@ -15,6 +15,19 @@ https://scratch.mit.edu/
 
 * N'utilise pas ton vrai nom pour créer un compte
 
+Choix du langage
+----------------
+
+Pour changer la langue de Scratch, cliqure sur le symbole du globe.
+Si tu choisis **English** tu obtiendra cette interface:
+
+.. image:: english.png
+
+Pas seulement les menus seront tous traduit dans la nouvelle langue.
+Le code lui-même change aussi. 
+
+Par exemple *avance 10 pas* en français va devenir *move 10 steps* en anglais.
+
 
 Les blocs
 ---------
