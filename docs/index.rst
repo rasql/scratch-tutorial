@@ -10,6 +10,8 @@ Welcome to Scratch tutorial's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   1_intro/intro
+
 
 
 Indices and tables
