@@ -12,6 +12,8 @@ Welcome to Scratch tutorial's documentation!
 
    1_intro/intro
    2_looks/looks
+   3_animate/animate
+   4_dialog/dialog
 
 
 

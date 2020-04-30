@@ -5,6 +5,11 @@ Scratch est un **langage de programmation** qui utilise des blocs.
 Chaque **bloc** est une instruction que l'ordinateur comprend.
 Tu mets des blocs ensemble pour créer un **programme**.
 
+.. raw:: html
+
+    <iframe src="https://scratch.mit.edu/projects/380796710/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+
 Créer un compte
 ---------------
 
@@ -159,6 +164,11 @@ de l'exemple précéent dans une boucle.
 
 Quand tu clique sur le drapeau, le chat commence à faire des aller-retours
 en continuité.
+
+Ajouter un arrière-fond
+-----------------------
+
+
 
 .. raw:: html
 
