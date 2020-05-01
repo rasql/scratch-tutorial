@@ -14,7 +14,7 @@ Welcome to Scratch tutorial's documentation!
    2_looks/looks
    3_animate/animate
    4_dialog/dialog
-
+   4_string/string
 
 
 Indices and tables

@@ -86,3 +86,77 @@ Again, we make Scratchy walk, while he is talking.
 This time we set the inital position and the initial direction.
 
 .. image:: dialog3c.png
+
+
+Spoken dialog
+-------------
+
+In the bottom of the block palette, click the extensions button and select the **Text to Speech** extension.
+
+.. raw:: html
+
+    <iframe src="https://scratch.mit.edu/projects/390682479/embed" 
+    allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+https://scratch.mit.edu/projects/390682479
+
+Now you can have the sprites pronounce the dialog.
+
+We give a **tenor** voice to Gobo.
+The duration of the speech is now dermining the display of the bubble.
+To turn off the bubble, you have to say an empty text.
+
+    .. image:: dialog4.png
+
+Scratchy is using an **squeaky** voice.
+
+    .. image:: dialog4b.png
+
+Add mouth movement
+------------------
+
+Gobo has 3 costumes with different mouth positions
+
+- gobo-a : closed
+- gobo-b : half-open
+- gobo-c : open
+
+Since they have a discussion about tennis, we add a sports ground as a back drop.
+
+.. raw:: html
+
+    <iframe src="https://scratch.mit.edu/projects/390691994/embed" 
+    allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+https://scratch.mit.edu/projects/390691994
+
+Inside the code for speaking we add a block to close the mouth after speaking.
+
+.. image:: dialog5.png
+
+We add a second stack, which is active during the time the index **i** is even.
+It cycles through the costumes every 0.2 second.
+
+.. image:: dialog5b.png
+
+Enter the dialog
+----------------
+
+To enter the dialog into the list, you have the make the list visible on the stage.
+Check the box next to the list reporter in the palette.
+
+.. image:: dialog_on.png
+
+Now you can
+
+- modify
+- add
+- delete 
+
+dialog items in the **dialog** list.
+
+.. image:: dialog_set.png
+
+
+
+
