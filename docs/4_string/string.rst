@@ -158,3 +158,29 @@ https://scratch.mit.edu/projects/390866776
 The following demo program shows the effect of the 5 string manipulation functions.
 
 .. image:: string2.png
+
+Imitate a typewriter
+--------------------
+
+Sometimes written conversation looks more natural if it is paced 
+like the text appearing on a typewriter.
+
+.. raw:: html
+
+    <iframe src="https://scratch.mit.edu/projects/390908846/embed" 
+    allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+https://scratch.mit.edu/projects/390908846
+
+The fonction **typewriter** has a text argument, and a second **ask** argument. 
+If it is 1 the text is asked as a question, and the user is invited to give an answer.
+
+.. image:: string3.png
+
+The following text displays 3 phrases and asks a question. 
+The answer is integrated into the 3rd phrase.
+
+.. image:: string3b.png
+
+
+

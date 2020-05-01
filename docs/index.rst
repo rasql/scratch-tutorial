@@ -15,6 +15,8 @@ Welcome to Scratch tutorial's documentation!
    3_animate/animate
    4_dialog/dialog
    4_string/string
+   5_clone/clone
+   5_pong/pong
 
 
 Indices and tables

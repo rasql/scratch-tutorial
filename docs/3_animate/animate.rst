@@ -7,8 +7,8 @@ Animation
     allowtransparency="true" width="485" height="402" frameborder="0" 
     scrolling="no" allowfullscreen></iframe>
 
-Musique
--------
+Music
+-----
 
 Choisi un arrière-fond neutre dans la catégorie **Motifs**. 
 
