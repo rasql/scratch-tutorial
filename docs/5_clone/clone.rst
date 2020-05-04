@@ -101,3 +101,68 @@ At each iteration it gets smaller, until it disappears.
 To make the movement look more natural, a small random change is introduced into the direction.
 
 .. image:: clone3.png
+
+Particle effects
+----------------
+
+Clones can be used for special effects such as:
+
+- fire, sparks, explosions
+- fog, clouds
+- bubbles,
+- birds, fish, leaves
+
+.. raw:: html
+
+    <iframe src="https://scratch.mit.edu/projects/391003021/embed" 
+    allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+https://scratch.mit.edu/projects/391003021
+
+For each clone we define 3 individual variables:
+
+- the x displacement **dx**
+- the y displacement **dy**
+- a boolean variable **is_original** to indicate if the sprite is the original or a clone  
+
+.. image:: clone4_var.png
+
+At the start of the program there is only the parent sprite.
+
+- set **is_orignal** to 1 (it's not a clone)
+- hide the parent sprite
+- create a spark effect at position (1, 1)
+- enter a **forever** loop
+- create sparks at the mouse position when the mouse is down
+
+.. image:: clone4_flag.png
+
+The function **effect at (x, y)** does the following:
+
+- go to position (x, y)
+- check if the sprite is an original (is_original = 1)
+- repeat 10 times
+- wait 0.05 seconds and create 3 clones
+
+.. image:: clone4_effect.png
+
+When a clone starts it does
+
+- show the sprite
+- set **is_original** to 0 (it's a clone)
+- set a random speed (dx, dy)
+- add a random color variation
+- repeat 20 times
+- become more transparent (add 4% ghost effect)
+- change position by (dx, dy)
+- add gravity to **dy**
+- delete the clone after 20 iterations
+
+.. image:: clone4_clone.png
+
+
+
+
+
+
+

@@ -1,6 +1,21 @@
 Looks
 =====
 
+Backdrops vs sprites
+--------------------
+
+Backdrops are images 
+- no **Motion** category
+
+Switch backdrop to
+- backdrop 1, 2, 3
+- previous
+- next
+- random
+
+What is **switch backdrop and wait**
+
+
 Size
 ----
 
