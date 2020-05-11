@@ -19,6 +19,7 @@ Welcome to Scratch tutorial's documentation!
    4_script/script
    4_string/string
    5_clone/clone
+   5_bricks/bricks
    5_platformer/platformer
    5_pong/pong
 
