@@ -101,6 +101,10 @@ Scene 1 : Alice's home
 ----------------------
 
 .. literalinclude:: alice.txt
+   :linenos:
+
+Download: 
+:download:`alice.txt <alice.txt>`
 
 Scenario
 --------
