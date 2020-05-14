@@ -76,10 +76,11 @@ For each cloned hen we do this in a loop:
 - wait 1-2 seconds
 - randomly move to the left or to the right
 - randomly point to the left or to the right
+
 .. image:: hen_start.png
 
-Animate fisch
--------------
+Animate fish
+------------
 
 .. raw:: html
 
@@ -87,3 +88,87 @@ Animate fisch
     allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
 https://scratch.mit.edu/projects/395268942
+
+Animate a play
+--------------
+
+Wouldn't it be interesting to use Scratch to create a theater play.
+Let's take the first scene from **Alice in Wonderland** from the Gutenberg project.
+
+https://www.gutenberg.org/files/35688/35688-h/35688-h.htm
+
+Scene 1 : Alice's home
+----------------------
+
+.. literalinclude:: alice.txt
+
+Scenario
+--------
+
+The most important point here is to work with lists. 
+We have two main lists: 
+
+- Scenario
+- Actors
+
+Fortunately we can import and export lists. 
+Let's prepare the dialog in a text editor.
+
+- remove the emply lines
+- break dialog into lines of less then 128 characters (which is the limit for text-to-speech)
+- place the actor's name on a single line
+- followed by one more multiple lines of dialog for that actor
+
+.. image:: alice_scenario.png
+
+So far we have 3 actors:
+
+- Alice
+- Carroll
+- Red Queen
+
+We use Capitalized names.
+These names will also figure in the **Actors** list.
+
+.. image:: alice_sprites.png
+
+Only sprites can show text. 
+We use the broadcast message **read line** to 
+
+- set the voice for that actor
+- show the dialog text in a bubble
+- pronounce it with text-to-speach
+- turn off the speech bubble
+
+.. image:: alice_speak_line.png
+
+At the start we 
+
+- set the language to English.
+- set the index to 1
+- set the actor to empty
+- switch to the title background
+
+.. image:: alice_start.png
+
+To read a single line, we load the current **Scenario** line into the variable **line**.
+If the line contains exactly the name of an actor in the **Actors** list, 
+we set the **actor** variable and proceed.
+
+Otherwise we translate the line of dialog and send the **speak line** broadcast.
+
+.. image:: alice_read_line.png
+
+Pressing the SPACE bar will perform just the current line of dialog.
+
+.. image:: alice_do_line.png
+
+Pressing A (All) will perform the whole play from the beginning to the end.
+.. image:: alice_all.png
+
+.. raw:: html
+
+    <iframe src="https://scratch.mit.edu/projects/391344110/embed" 
+    allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+https://scratch.mit.edu/projects/391344110
