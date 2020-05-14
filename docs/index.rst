@@ -15,6 +15,7 @@ Welcome to Scratch tutorial's documentation!
    3_animate/animate
    4_dialog/dialog
    4_menu/menu
+   4_music/music
    4_room/room
    4_script/script
    4_string/string
