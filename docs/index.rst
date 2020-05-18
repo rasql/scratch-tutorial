@@ -21,6 +21,7 @@ Welcome to Scratch tutorial's documentation!
    4_script/script
    4_string/string
    4_tablet/tablet
+   4_text/text
    4_var/var
    5_clone/clone
    5_bricks/bricks
