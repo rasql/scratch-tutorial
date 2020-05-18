@@ -1,18 +1,17 @@
-Introduction to Scratch
+Introduction à Scratch
 ======================
 
-Scratch is a **programming language** which uses blocks.
-Each **block** is an instruction for the the computer to do something.
-To create a **Scratch progam**, you assemble colored blocks into a sequence.
-
+Scratch est un **langage de programmation** qui utilise des blocs.
+Chaque **bloc** est une instruction que l'ordinateur comprend.
+Tu mets des blocs ensemble pour créer un **programme**.
 
 .. raw:: html
 
     <iframe src="https://scratch.mit.edu/projects/380796710/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
 
-Create an account
------------------
+Créer un compte
+---------------
 
 Pour sauvegarder et partager tes programmes en ligne,
 tu dois aller sur le site Scratch et créer un compte.
@@ -21,8 +20,8 @@ https://scratch.mit.edu/
 
 * N'utilise pas ton vrai nom pour créer un compte
 
-Switch the language
--------------------
+Choix du langage
+----------------
 
 Pour changer la langue de Scratch, cliqure sur le symbole du globe.
 Si tu choisis **English** tu obtiendra cette interface:
@@ -35,8 +34,8 @@ Le code lui-même change aussi.
 Par exemple *avance 10 pas* en français va devenir *move 10 steps* en anglais.
 
 
-Programming blocks
-------------------
+Les blocs
+---------
 
 Dans l'onglet **Code** tu trouves 9 catégories de blocs. 
 Chaque catégorie a une couleur différente.
@@ -58,8 +57,8 @@ Tu vois que sa forme est différente: il n'a pas d'encoche de connexion vers le 
 Pour programmer tu dois déplacer un bloc depuis la palette vers la zone de scripts.
 Deus bloc se connectent à l'aide de petits embouts.
 
-Your first program
-------------------
+Ton premier programme
+---------------------
 
 - clique sur **Evénements**
 - choisis le bloc *quand ⚑ est cliqué*
@@ -82,8 +81,8 @@ ce qui fait anvancer le chat de 10 pas.
 En Scratch 1 pas est un pixel.
 Un pixel est un point élémentaire de l'écran.
 
-The coordinate system
----------------------
+Les coordonnées
+---------------
 
 A la fin de la palette **Mouvement**, tu peux cocher *abcisse x* et *ordonnée y*.
 
@@ -98,8 +97,8 @@ Essaye de déplacer le chat.
 Les coordonnées vont varier de -240 à 240 pour la direction x (abscisse) 
 et de -180 à 180 pour la direction y (coordonnée).
 
-Move a sprite
--------------
+Bouger avec les flèches
+------------------------
 
 Tu peux utiliser les touches de direction pour déplacer le sprite.
 Crée ce bout de programme pour faire avancer le chat de 30 pas
@@ -113,8 +112,8 @@ quand tu appuye sur la touche *gauche*.
 .. image:: move_left.png
 
 
-Move along the y axis
----------------------
+Bouger dans l'axe y
+-------------------
 
 Tu peux faire bouger le chat vers le haut avec ce bout de code:
 
@@ -125,8 +124,8 @@ et vers le bas avec ce code-ci:
 .. image:: move_down.png
 
 
-Glide to a random position
---------------------------
+Glisser vers une position aléatoire
+-----------------------------------
 
 Tu peux facilment faire glisser ton sprite vers une position aléatoire.
 Essaie ce-ci:
@@ -134,8 +133,8 @@ Essaie ce-ci:
 .. image:: move_random.png
 
 
-Animate walking
----------------
+Animer la marche
+----------------
 
 L'apparence d'un sprite est appelé **costume**. 
 Le chat a déjà un deuxième costume par défaut, avec les pieds dans une autre position.
@@ -155,8 +154,8 @@ Quand le chat arrive au bord droit, il ne peut plus avancer et reste coincé.
 Tu peux ajouter le bloc *rebondir si le bord est atteint*.
 
 
-Continous animation
--------------------
+Animation d'un sprite
+---------------------
 
 Tu peux faire bouger automatiquement un sprite en mettant les blocs de déplacement
 de l'exemple précéent dans une boucle.
@@ -166,8 +165,10 @@ de l'exemple précéent dans une boucle.
 Quand tu clique sur le drapeau, le chat commence à faire des aller-retours
 en continuité.
 
-Add a back-drop
----------------
+Ajouter un arrière-fond
+-----------------------
+
+
 
 .. raw:: html
 
