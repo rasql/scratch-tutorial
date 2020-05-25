@@ -11,12 +11,14 @@ Welcome to Scratch tutorial's documentation!
    :caption: Contents:
 
    1_intro/intro
+   1_technique/technique
    2_looks/looks
    3_animate/animate
    4_cloud/cloud
    4_dialog/dialog
    4_menu/menu
    4_music/music
+   4_pen/pen
    4_room/room
    4_script/script
    4_string/string
