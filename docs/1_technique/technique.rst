@@ -91,3 +91,63 @@ Inside the loop we:
 The first 4 cats are clones, the last one is the orignal.
 
 .. image:: size3.png
+
+Increment a variable
+--------------------
+
+The block **change by** can be used to increment a variable.
+The exemple below increments the variable **i** by 1 when pressing space.
+
+.. image:: inc.png
+
+We display the variable in a speech bubble.
+
+.. image:: inc2.png
+
+Reset the counter
+-----------------
+
+Each time we press the space bar the counter **i** increments.
+We can add an **if** block to reset the counter when reaching a certain value.
+
+.. image:: inc3.png
+
+Use modulo to wrap
+------------------
+
+Another way to wrap around is the function **modulo** or **mod** which returns
+the remainder of a division.
+
+This is shorter:
+
+.. image:: mod.png
+
+How does it work ? 
+You can place only the **mod** block on the programming canvas and test it
+by entering numbers and click with the mouse to evaluate the expression.
+
+You will see **5 mod 6** is 5 (the reminder of 5 divided by 6).
+
+.. image:: mod2.png
+
+You will see **6 mod 6** is 0 (the reminder of 6 divided by 6).
+
+.. image:: mod3.png
+
+The counter i cycles through the 6 values 0, 1, 2, 3, 4, 5.
+
+To start with 1 instead with 0 we can modifiy the expression to this.
+
+.. image:: mod4.png
+
+The counter i cycles now through the 4 values 1, 2, 3, 4.
+
+Cycle the other way
+-------------------
+
+We can also decrement and cycle back when reaching 0.
+
+.. image:: mod5.png
+
+Here the counter **i** cycles through the range 3, 2, 1, 0.
+

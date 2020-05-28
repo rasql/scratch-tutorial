@@ -263,4 +263,43 @@ This is the project
 https://scratch.mit.edu/projects/398912533
 
 
+Move by (x, y)
+--------------
 
+There are two **change x/y by** blocks but no block which changes both at the same time.
+Let's create such a function.
+
+.. image:: pen_move_by.png
+
+Now let's define one to draw a line by an amount (x, y).
+
+.. image:: pen_line.png
+
+
+Draw a grid
+-----------
+
+Now we have everything to draw a grid.
+
+.. image:: pen_grid.png
+
+We place the pen to the starting position.
+Now draw a 7x5 grid with a line distance **d=20**.
+
+.. image:: pen_grid2.png
+
+And this is the result.
+
+.. image:: pen_grid3.png
+
+We place the pen to another starting position, 
+then change the color to purple and the thickness to 3.
+Now draw a 3xs grid with a line distance **d=30**.
+
+.. image:: pen_grid4.png
+
+And this is the result.
+
+.. image:: pen_grid5.png
+
+https://scratch.mit.edu/projects/398983654
