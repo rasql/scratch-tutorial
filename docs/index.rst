@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Scratch tutorial's documentation!
-============================================
+Welcome to Scratch tutorial!
+============================
 
 .. toctree::
    :maxdepth: 2
@@ -20,6 +20,7 @@ Welcome to Scratch tutorial's documentation!
    4_music/music
    4_pen/pen
    4_room/room
+   4_scenario/scenario
    4_script/script
    4_string/string
    4_tablet/tablet

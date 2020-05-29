@@ -1,5 +1,5 @@
-Introduction to Scratch
-=======================
+Introduction
+============
 
 Scratch is a **programming language** which uses blocks.
 Each **block** is an instruction for the the computer to do something.

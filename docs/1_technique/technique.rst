@@ -65,8 +65,8 @@ Each sprite (and clone) has these variables:
 
 .. image:: sprite2.png
 
-Toggle size
------------
+Toggle sprite size
+------------------
 
 When toggling a value, you need a variable to store the current state. 
 You can use existing variables. In the following example the size variable is used to toggle.
