@@ -6,10 +6,10 @@ There are 4 operations with strings
 
 .. image:: string_ops.png
 
-- join(apple , banana) returns ``apple banana`` (there is a space after apple)
-- letter(1, apple) returns ``a``
-- length(apple) returns ``5``
-- contains(apple, a) returns ``True``
+- **join(apple) (banana)** returns ``apple banana`` (there is a space after apple)
+- **letter (1) of (apple)** returns ``a``
+- **length of (apple)** returns ``5``
+- **(apple) contains (a)** returns ``True``
 
 Detect a key press
 ------------------

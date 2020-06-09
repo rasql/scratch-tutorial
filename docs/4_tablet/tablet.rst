@@ -104,7 +104,7 @@ When the sprite Scratchy receives a **speak line** broadcast it:
 
 .. image:: tablet_scratchy1.png
 
-The mouse movement needs to be done in a separate loop.
+The mouth movement needs to be done in a separate loop.
 
 .. image:: tablet_scratchy2.png
 
@@ -118,8 +118,8 @@ We have one single sprite which is made up of a string with 5 emoji characters.
 
 .. image:: tablet_buttons1.png
 
-We each ajust the size of the string to 250 pixels, 
-so that each emoji has a width of 50 pixels.
+We ajust the total size of the string to 250 points, 
+so that each emoji has a width of 50 points.
 The origin is also important. 
 The origin marker is placed in the upper left corner.
 
@@ -266,4 +266,114 @@ We want to use text as a means of feedback for gestures on all 10 slides.
 However the speaking voice, we only want it in slide number 9, where we present gestures.
 
 .. image:: tablet_gesture8.png
+
+Virtual keyboard
+----------------
+
+Tablets use a virtual keyboard. With the **ask () and wait** block the virtual keyboard of the tablet OS can be used.
+To have more control, you can also program a virtual keyboard within Scratch by yourself.
+
+We create the image of a single key by drawing a rectangle with a single letter inside. Make the size about 32 points wide.
+Select both items and group them.
+
+.. image:: sprite_key.png
+
+Then copy-paste that key and align the second key with the first one.
+Use a horizontal (and vertical) spacing of 40 points.
+Then select the two keys and copy-paste them again and align. Repeat with 4 keys to get 8 keys.
+Continue this to obtain a keyboard with 3 lines of 10 keys.
+Then you relabel the keys according the keyboard layout you want to show (qwertz...).
+
+Then place a colored filled rectangle behind the keys. 
+You can add a second grey rectangle to add a shadow.
+Place the origin of the sprite to the lower left corner.
+
+.. image:: sprite_keyboard.png
+
+Decoding the keyboard
+---------------------
+
+At the start we:
+
+- position the sprite to the lower left corner
+- switch the costume to **icon** (small keyboard icon abc)
+- set **text** to an empty string
+
+.. image:: keyboard_start.png
+
+When the keyboard of the icon is clicked we:
+
+- play a sound
+- switch to the costume to **keyboard** if the costume was the icon
+- decode the key
+- handle the key
+- display the new text
+
+.. image:: keyboard_click.png
+
+Variables
+---------
+
+The code for this sprite needs 5 variables: 
+
+- **c** - the current character pressed
+- **i** - the horzontal index
+- **j** - the vertical index
+- **text** -  the current text
+- **result** - the return value for the *substring** function
+
+.. image:: keyboard_var.png
+
+Decode the key
+--------------
+
+Based on the mouse position, we can obtain the indexes **(i, y)** of the pressed key.
+
+- using **ceiling** the index **i** goes from 1 to 10
+- using **floor** the index **j** goes from 0 to 2
+
+Then we combine the two indexes with the expression **(10*j) + i** to get an index 
+from 1 to 30 which we use to look up the character pressed.
+
+We use 2 special characters
+
+- **$** to indicate *delete*
+- **&** to indicate *return*
+
+.. image:: keyboard_decode_key.png
+
+When handling the key we look at the current character **c** and
+
+- delete the last character when it is **$**
+- return to the icon costume when it is **&**
+- append it to **text** otherwise
+
+.. image:: keyboard_handle_key.png
+
+To delete the last character of **texte** we need the **substring** function.
+
+The **substring** function returns a substring of *text* starting at position *i* 
+with a length of *n* and returns it in the variable **result**
+
+.. image:: keyboard_substring.png
+
+This is the keyboard after entering the text *hello world*.
+
+.. image:: keyboard_hello.png
+
+This is the icon after pressing the RETURN key.
+
+.. image:: keyboard_hello2.png
+
+This is the online version:
+
+.. raw:: html
+
+    <iframe src="https://scratch.mit.edu/projects/402881699/embed" 
+    allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+https://scratch.mit.edu/projects/402881699
+
+
+
 

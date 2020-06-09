@@ -43,8 +43,8 @@ It contains all lines of dialog.
 In order to create the scenario, it is easiest to show the **Script** and
 edit it by:
 
-- (+) add new items
-- (x) delete the item
+- ``+`` add a new item
+- ``x`` delete the item
 - (return) add new item
 
 Pressing the **S** toggles the boolean **_script** variable and shows or hides the **Script** list.
@@ -209,3 +209,48 @@ Copying a line just copies the current line to the **tmp** variable.
 Pasting a line inserts the **tmp** variable at the current **index** position.
 
 .. image:: copy2.png
+
+Draw the mouth
+--------------
+
+To give the indication of speaking, we should animathe the mouth.
+Duplicate three times the first cat sprite.
+
+.. image:: mouth.png
+
+Now color the mouth of the first sprite with 70% red.
+
+.. image:: reshape2.png
+
+The cat sprite will look like this:
+
+.. image:: mouth1.png
+
+Now use the reshape tool to remove picture points.
+
+.. image:: reshape.png
+
+Remove the edges of the mouth to get this.
+
+.. image:: reshape1.png
+
+The cat sprite will look like this.
+
+.. image:: mouth2.png
+
+Remove the mouth completely. Draw a new black line with a with of 2.4 points.
+With the reshape tool click in the center and pull the line downwards until you get this:
+
+.. image:: reshape3.png
+
+The cat sprite will lok like this:
+
+.. image:: mouth3.png
+
+Animate the mouth
+-----------------
+
+To create the animation, we select randomly one of the 3 mouth sprites.
+In between we wait 0.1 seconds. The loop repeats forever, and is stopped from the other script.
+
+.. image:: Animate.png
