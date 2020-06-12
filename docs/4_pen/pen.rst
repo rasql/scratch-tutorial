@@ -34,6 +34,67 @@ This is the result, drawn on the backdrop with xy axes.
 
 .. image:: pen_move2.png
 
+RGB colors
+----------
+
+The **set pen color to ()** block has a drop-down menu to select the color via:
+
+- color
+- saturation
+- brightness
+
+.. image:: pen_color.png
+
+It is also possible to provide the color with an integer variable.
+Most computers represent color with the 3 components:
+
+- red
+- green
+- blue
+
+This is also called the **RGB color** system.
+The three components are expressed with a byte-sized value.
+The intensity of each color component can go from 0 to 255.
+
+Each color component occupies one byte and the 3 components can be combined into a 3-byte integer.
+When expressed as hexadecimal digit, the RGB color number has this format::
+
+    0xRRGGBB
+
+For example:
+
+- ``0xFF0000`` is red
+- ``0x00FF00`` is green
+- ``0x0000FF`` is blue
+
+We use 3 variables and express each base color at maximum intensity.
+
+.. image:: pen_rgb_var.png
+
+Now we can used these variables to draw three line segments in these base colors.
+- blue is 255
+- green is 255 shifted by 8 bits (multiplied by 256)
+- red is 255 shifted by 16 bits (multiplied by 256*256)
+
+.. image:: pen_rgb.png
+
+This is the result:
+
+.. image:: pen_rgb2.png
+
+We can also add two base colors to get a new color.
+
+- red and green = yellow
+- red and blue = magenta
+- blue and gren = cyan
+
+.. image:: pen_cym.png
+
+This is the result:
+
+.. image:: pen_cym2.png
+
+
 Move slowly
 -----------
 
@@ -41,9 +102,9 @@ The **Motion** category has a **glide to x, y** block.
 We can create a similar block for gliding a certain distance.
 
 In Scratch a loop executes 25 times each second.
-To last **t** seconds, it must repeat **tx25** times.
+To last **t** seconds, it must repeat ``t*25`` times.
 
-The distance increment of each iteration is **1/(tx25)** of the total distance.
+The distance increment of each iteration is ``1/(t*25)`` of the total distance.
 
 .. image:: pen_glide.png
 
@@ -51,16 +112,6 @@ To test the gliding move we write:
 
 .. image:: pen_glide2.png
 
-Turn slowly
------------
-
-Now let's write a block which rotates the sprite slowly.
-
-.. image:: pen_turn.png
-
-Let's test it.
-
-.. image:: pen_turn2.png
 
 Draw a square
 -------------
@@ -72,6 +123,12 @@ Now we combine the slow move and the slow turn block to draw a square.
 This is the result.
 
 .. image:: pen_square2.png
+
+If we do not set the rotation style, the pen will turn by 90 degrees at each corner.
+That does not give a natural animation style. It's better to not rotate the pen.
+Therefore at the start we set the rotation style to **don't rotate**.
+
+.. image:: pen_rotation.png
 
 Draw a polygon
 --------------
@@ -136,7 +193,7 @@ We define a fonction **set x, y** to add the point (x, y) to the **Points** list
 
 .. image:: pen_set.png
 
-The functiion **Triangle** sets the 4 points of the triangle shown above.
+The function **Triangle** sets the 4 points of the triangle shown above.
 
 .. image:: pen_triangle.png
 
@@ -303,3 +360,75 @@ And this is the result.
 .. image:: pen_grid5.png
 
 https://scratch.mit.edu/projects/398983654
+
+Record pen movement
+-------------------
+
+In this example we use a list to memorize the pen movenent.
+Clicking anywhere on the stage, starts drawing the line with the pen sprite, 
+and also recording of the x, y coordinates.
+
+.. image:: pen4_stage.png
+
+It uses the 4 variables:
+
+- mouse position **x, y**
+- mouse **down** state (true or false)
+- list index **i**
+
+.. image:: pen4_var.png
+
+At the start, we set the color to red and the thickness to 3.
+
+.. image:: pen4.png
+
+The function **add point** adds the current mouse position to the **Points** list.
+
+.. image:: pen4_add.png
+
+When the stage is clicked, the message **draw** is broadcast. This 
+
+- moves the pen to the mouse
+- records the position
+- puts the pen down
+
+until the mouse is up.
+
+.. image:: pen4_draw.png
+
+When the **Play** button is pressed the recorded points are redrawn.
+
+- reset index **i**  to 1
+- repeat until the end of the list
+- read the 3 variables **x, y, down** from the *Point* list
+- to to **x, y**
+- if **down** is true, then pen down (otherwise up)
+
+.. image:: pen4_play.png
+
+The **Button** sprite uses 2 emoticons.
+Pay attention to leave a space after the first icon, in order to make the frame larger.
+On the Android OS the icons are larger as on the iOS, and the icons are cut off on the right side.
+If you don't add the extras empty space after the emoticon, the icon will be cropped.
+
+.. image:: pen4_button.png
+
+Make the button hight 40 points. Using **ceiling** we can calculate the index **i** of the button.
+
+- 1 : delete
+- 2 : play
+
+.. image:: pen4_click.png
+
+To use keyboard shortcuts on the computer, we add this
+
+.. image:: pen4_key.png
+
+Try it out
+
+.. raw:: html
+
+    <iframe src="https://scratch.mit.edu/projects/404148380/embed"
+    allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+https://scratch.mit.edu/projects/404148380
