@@ -147,8 +147,8 @@ We repeat these costumes and move the charactor to the right.
 
 .. image:: boy3.png
 
-Gestures, sound and speech
---------------------------
+Look, sound and speech
+----------------------
 
 We accompany phrases with gesture (laugh, point up).
 Sounds are interspersed in between phrases.
@@ -239,8 +239,8 @@ Being at the end of the *chamber scene*:
 
 .. image:: boy10.png
 
-Conversation between two characters
------------------------------------
+Talk between characters
+-----------------------
 
 In the *museum scene* we have a dialog between the boy and the girl.
 Speech bubbles only can be called in the code that belongs to that sprite.
@@ -251,6 +251,10 @@ We use the message **speak** to call code belonging to the **Girl** sprite.
 The variable **line** contains the text to be spoken.
 
 .. image:: boy_girl2.png
+
+This is a talking scene in the museum, in Japanese.
+
+.. image:: boy_girl3.png
 
 
 The girl sprite
@@ -309,13 +313,19 @@ The cipher
 
 The **Pencil** sprite translates the text in the **message** variable to a written code.
 
-This is the cipher.
+The pigpen cipher or masonic cipher exchanges letters for geometric symbols.
+The first 2x9 letters are arranged in a tic-tac-toe shape.
+The following 2x4 letters of the alphabet are arranged in an x shape.
+The surround pattern is forms the secret symbol. The second group is designated with an added dot.
 
-.. image:: cypher.png
+.. image:: cipher.png
 
 For example the message *the oak tree keeps my ring* is expressed as this:
 
 .. image:: secret_message.png
+
+Play the game
+-------------
 
 This is the game:
 
