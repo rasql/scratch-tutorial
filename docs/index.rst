@@ -30,6 +30,7 @@ Welcome to Scratch tutorial!
    5_bricks/bricks
    5_platformer/platformer
    5_pong/pong
+   6_adventure/adventure
 
 
 Indices and tables
