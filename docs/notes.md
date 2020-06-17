@@ -37,3 +37,20 @@ Lists
 
 - in fullscreen mode editing is not possible
 - fullscreen: (+ return =) disabled, only scroll
+
+
+Overall
+
+- programs need to be modular
+- Sprites are the units
+- Sprites must be independant
+    - local variables
+    - unified communication protocol
+    - examples
+
+- Actor sprites
+  - talk, think, speak
+  - language
+  - position, angle
+  - size, color
+  - effects
