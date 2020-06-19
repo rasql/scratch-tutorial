@@ -143,6 +143,18 @@ We can easily program it using the 3x3 matrix and a dot.
 
 .. image:: pigpen_cipher.png
 
+The encoding is very similar to the 16 segment encoding. We use the 9 to lift the pen and draw the center dot.
+
+.. image:: pigpen1.png
+
+We set the color to green.
+
+.. image:: pigpen2.png
+
+This is the alphabet printed in pipen cipher.
+
+.. image:: pigpen3.png
+
 
 Braille code
 ------------
